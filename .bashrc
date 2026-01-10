@@ -8,5 +8,5 @@ fi
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-alias nekoray='cd ~/nekoray && ./nekobox'
-PS1="\[\e[1;33m\]\w\[\e[0m\]\n\$ " # it config remove host,name of user in bash
+alias nekoray='cd ~/nekoray && ./nekobox' # this running my vpn, don't pay attention
+PS1="\[\e[1;33m\]\w\[\e[0m\]\n\$ " # it config remove host and name of user in bash

@@ -1,3 +1,4 @@
 {
-    "colorscheme": "sonokai"
+    "colorscheme": "sonokai",
+    "softwrap": true
 }
