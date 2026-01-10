@@ -2,6 +2,3 @@
 ^\.github
 \.swp$
 \.bak$
-.*\.md
-.*\.sh
-.*\.png
