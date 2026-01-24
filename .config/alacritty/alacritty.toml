@@ -1,10 +1,13 @@
+[font]
+size = 14
+
 [font.normal]
 family = "IosevkaTerm Nerd Font"
 
 # sonokai.toml: Sonokai color scheme for Alacritty.
 [colors.primary]
 foreground = "#e2e2e3"
-background = "#2c2e34"
+background = "#222222"
 
 [colors.normal]
 black = "#181819"
