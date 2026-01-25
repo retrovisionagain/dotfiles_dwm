@@ -35,7 +35,7 @@ static char titlenormbordercolor[]       = "#444444";
 static char titlenormfloatcolor[]        = "#db8fd9";
 
 static char titleselfgcolor[]            = "#ffffff";
-static char titleselbgcolor[]            = "#e7c664";
+static char titleselbgcolor[]            = "#222222";
 static char titleselbordercolor[]        = "#e7c664";
 static char titleselfloatcolor[]         = "#e7c664";
 
@@ -196,12 +196,16 @@ static const char *dmenucmd[] = {
 };
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char *flameshotcmd[]  = { "flameshot", "gui", NULL };
+static const char *volumeinc[]  = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%", NULL };
+static const char *volumedeg[]  = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key            function                argument */
 	{ MODKEY,                       XK_d,          spawn,                  {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return,     spawn,                  {.v = termcmd } },
 	{ 0,                            XK_F12,        spawn,                  {.v = flameshotcmd } },
+	{ 0,                            XK_F5,         spawn,                  {.v = volumeinc } },
+	{ 0,                            XK_F4,         spawn,                  {.v = volumedeg } },
 	{ MODKEY,                       XK_b,          togglebar,              {0} },
 	{ MODKEY,                       XK_j,          focusstack,             {.i = +1 } },
 	{ MODKEY,                       XK_k,          focusstack,             {.i = -1 } },
