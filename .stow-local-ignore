@@ -2,3 +2,6 @@
 ^\.github
 \.swp$
 \.bak$
+.gitignore
+^/README.*
+scrshots
